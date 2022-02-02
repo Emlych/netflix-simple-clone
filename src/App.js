@@ -11,12 +11,6 @@ function App() {
         return (
           <div key={index}>
             <Section category={movie.category} images={movie.images} />
-
-            {/* <div className="list">
-              {movie.images.map((image, index) => {
-                return <img src={image} index={index} alt={index} />;
-              })}
-            </div> */}
           </div>
         );
       })}

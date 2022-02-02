@@ -1,11 +1,11 @@
 import React from "react";
 
-const Section = (props) => {
+const Section = ({ category, images }) => {
   return (
     <div className="section">
-      <h2>{props.category}</h2>
+      <h2>{category}</h2>
       <div className="list">
-        {props.images.map((image, index) => {
+        {images.map((image, index) => {
           return <img src={image} index={index} alt={index} />;
         })}
       </div>
